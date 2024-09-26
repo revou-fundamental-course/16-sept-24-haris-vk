@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradasi Background</title>
+    <style>
+        body {
+            /* Menggunakan linear-gradient dengan 2 warna */
+            background: linear-gradient(to right, #992c04, #06abc1);
+            /* Atau bisa juga dengan lebih dari 2 warna */
+            /* background: linear-gradient(to right, #ff7e5f, #feb47b, #86A8E7); */
+            height: 100vh; /* Mengatur agar background mengisi seluruh viewport */
+            margin: 0; /* Menghilangkan margin dari body */
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Haris Profile</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#our-profile">My Profile</a></li>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home-page">
+            <h1 id="welcome-message">Hi <span id="user-name"></span>!</h1>
+        </section>
+        <section id="our-profile-page">
+            <h1 style="color: rgb(74, 4, 104);">This Is My Web Profile</h1>
+            <p>Perkenalkan namaku Haris. Saat ini, aku adalah seorang siswa SMK dengan minat besar di bidang pemograman.</p>
+        </section>
+        <section id="profile">
+            <header>
+                <div class="photo-banner">
+                    <!-- Photo banner image here -->
+                </div>
+            </header>
+            <section class="about-company">
+                <h2 style="color: blue;">About the Company</h2>
+                <p>Hello! My name is Haris, and I am currently a vocational high school (SMK) student with a strong passion for programming. I’ve always been fascinated by technology and how lines of code can create something tangible and impactful. My ultimate goal is to become a skilled programmer and develop creative solutions for various technological challenges.
+
+                    As a student, I’m constantly learning and working hard to master different programming languages. I enjoy problem-solving and the satisfaction that comes from seeing a project come to life. Although I sometimes face challenges, like understanding complex concepts, I believe that with hard work and discipline, I will continue to improve</p>
+            </section>
+            <section class="company-vision-mission">
+                <h2 style="color: darkblue;">Company Vision and Mission</h2>
+                <p>Become a person who continues to grow and contribute to the world of technology without never giving up. 
+                    Continue to learn and develop skills in programming, not afraid to face challenges, and always look for innovative solutions to the problems faced.</p>
+            </section>
+        </section>
+        <section id="contact">
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea><br><br>
+                <input type="submit" value="Send Message">
+            </form>
+            <div id="form-response"></div>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
